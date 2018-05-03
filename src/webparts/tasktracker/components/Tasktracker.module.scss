@@ -1,0 +1,42 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+
+.container {
+  max-width: 450px;
+  border: solid 0.5px darkgray;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  color: royalblue;
+  .title {
+    font-weight: bold;
+    text-align: center;
+    color : darkblue;
+  }
+  .header {
+    font-weight: bold;
+    border-radius: 5px;
+    background: lightsteelblue;
+    color: darkblue;
+    span {
+      text-align: center;
+    }
+  }
+  span {
+    display : inline-block;
+    width: 25%;
+  }
+  li {
+    display: flex;
+  }
+  .item  {
+    span {
+      border-bottom: solid 0.5px lightgray;
+      padding: 5
+    }
+    .number {
+      text-align: right;
+    }
+  }
+}
+

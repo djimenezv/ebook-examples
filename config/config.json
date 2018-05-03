@@ -1,0 +1,36 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "hello-world-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/helloWorld/HelloWorldWebPart.js",
+          "manifest": "./src/webparts/helloWorld/HelloWorldWebPart.manifest.json"
+        }
+      ]
+    },
+    "tasktracker-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/tasktracker/TasktrackerWebPart.js",
+          "manifest": "./src/webparts/tasktracker/TasktrackerWebPart.manifest.json"
+        }
+      ]
+    },
+    "picture-library-manager-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/pictureLibraryManager/PictureLibraryManagerWebPart.js",
+          "manifest": "./src/webparts/pictureLibraryManager/PictureLibraryManagerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "HelloWorldWebPartStrings": "lib/webparts/helloWorld/loc/{locale}.js",
+    "TasktrackerWebPartStrings": "lib/webparts/tasktracker/loc/{locale}.js",
+    "PictureLibraryManagerWebPartStrings": "lib/webparts/pictureLibraryManager/loc/{locale}.js"
+  }
+}
